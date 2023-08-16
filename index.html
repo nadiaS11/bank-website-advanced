@@ -7,5 +7,53 @@
 
     <title>The Shirks - Home</title>
   </head>
-  
+  <body class="container mx-auto">
+    <header>
+      <h1 class="p-5 text-5xl font-bold text-center">
+        Helllllloooooo <span class="text-purple-500">Sharks </span>
+      </h1>
+    </header>
+    <main class="mx-auto">
+        <div class="grid grid-cols-3 gap-4  mx-auto">
+            <div class="bg-[#a390e4] flex flex-col p-8 rounded-lg my-8" id="deposite-div"> 
+                <p class="font-black text-[#f5efff] text-xl">Deposit</p>
+                <p class="font-black text-white text-5xl" >
+                    $<span id="deposit-amount">00</span>
+                </p>
+    
+            </div>
+            <div class="bg-[#c69dd2] flex flex-col p-8 rounded-lg my-8" id="withdraw-div"> 
+                <p class="font-black text-[#f5efff] text-xl">Withdraw</p>
+                <p class="font-black text-white text-5xl" >
+                    $<span id="withdraw-amount">00</span>
+                </p>
+    
+            </div>
+            <div class="bg-[#cc8b8c] flex flex-col p-8 rounded-lg my-8 " id="balance-div"> 
+                <p class="font-black text-[#f5efff] text-xl">Balance</p>
+                <p class="font-black text-white text-5xl" >
+                    $<span id="balance-amount">2400</span>
+                </p>
+    
+            </div>
+            
+        </div>
+        <div class=" flex flex-col md:flex-row items-center justify-between gap-3 ">
+            <div class="w-full bg-[#7f7eff] flex flex-col p-8 rounded-lg my-8  " id="deposite-input-div"> 
+                <p class="font-bold text-[#f5efff] text-xl">Deposit Amount</p>
+                <input class="rounded my-4  p-1" id="deposit-input" placeholder="Enter deposit amount">
+                <button  class=" w-4/12 p-1 rounded bg-red-400 hover:bg-gray-700 font-bold text-yellow-50 " type="" id="btn-deposit">Submit</button>
+                
+                
+    
+            </div>
+            <div class="w-full bg-[#f9c784]  flex flex-col p-8 rounded-lg my-8 " id="withdraw-input-div"> 
+                <p class="font-bold text-[#f5efff] text-xl">Withdraw Amount</p>
+                <input class="rounded my-4 p-1" id="withdraw-input" placeholder="Enter withdrawal amount">
+                <button  class=" w-4/12 p-1 rounded bg-red-400 hover:bg-gray-700 font-bold text-yellow-50 "  type="" id="btn-withdraw">Submit</button>
+            </div>
+        </div>
+    </main>
+    <script src="bank.js"></script>
+  </body>
 </html>
